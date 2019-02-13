@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QComboBox>
 
 namespace Ui {
 class MainWindow;
@@ -24,6 +25,9 @@ private:
     QStringList theorems{"Pythagore", "Thalès"};
     QStringList pythagoreVersion{"Hypoténuse", "Autre côté"};
     QStringList thalesVersion{"Numérateur", "Dénominateur"};
+
+private slots:
+    void setListInBox(const QString &arg1);
 };
 
 #endif // MAINWINDOW_H
